@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/lib/css/bootstrap.css" rel="stylesheet" />
+    <script src="~/lib/jquery/jquery.js"></script>
+    <script src="~/lib/jquery/bootstrap.js"></script>
+</head>
+<body>
+    <div class="container" style="border:1px solid blue;">
+        <div class="row">
+            <div class="card-header col-md-12">
+                Header
+            </div>
+        </div>
+        <div class="row" style="min-height:500px;">
+            <div class="col-md-2" style="background-color: #ac3a3a;">
+                <partial name="_NavigationPartialView" />
+            </div>
+            <div class="col-md-10" style="background-color: #808080;">
+                @RenderBody()
+            </div>
+        </div>
+
+        <div class="row" style="background-color: #ac9a3a;">
+            Footer
+        </div>
+    </div>
+</body>
+</html>

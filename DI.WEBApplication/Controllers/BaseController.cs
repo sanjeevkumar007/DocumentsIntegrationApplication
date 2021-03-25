@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace DI.WEBApplication.Controllers
 {
-    public class HomeController : BaseController
+    public class BaseController : Controller
     {
-        public IActionResult Index()
-        {
-            return View();
-        }
+       
     }
 }

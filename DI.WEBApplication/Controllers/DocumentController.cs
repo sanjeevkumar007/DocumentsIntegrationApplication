@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DI.WEBApplication.Controllers
 {
-    public class HomeController : BaseController
+    public class DocumentController : BaseController
     {
         public IActionResult Index()
         {
